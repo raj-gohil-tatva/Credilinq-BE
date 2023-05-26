@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "60431098-6151-49ba-aa08-651ca9a34630",
+		"name": "Credilinq",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24535653"
+	},
+	"item": [
+		{
+			"name": "Register to Credilinq",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "CompanyUEN",
+							"value": "LoremRaj3",
+							"type": "text"
+						},
+						{
+							"key": "CompanyName",
+							"value": "Locus",
+							"type": "text"
+						},
+						{
+							"key": "FullName",
+							"value": "Raj Gohil",
+							"type": "text"
+						},
+						{
+							"key": "CompanyPosition",
+							"value": "Developer",
+							"type": "text"
+						},
+						{
+							"key": "Email",
+							"value": "raj.gohil@tatvasoft.com",
+							"type": "text"
+						},
+						{
+							"key": "PhoneNumber",
+							"value": "+659876543210",
+							"type": "text"
+						},
+						{
+							"key": "Documents",
+							"type": "file",
+							"src": "/C:/Users/LPS27/OneDrive/Desktop/image_sample/sample1.pdf"
+						},
+						{
+							"key": "Documents",
+							"type": "file",
+							"src": "/C:/Users/LPS27/OneDrive/Desktop/image_sample/sample2.pdf"
+						},
+						{
+							"key": "Documents",
+							"type": "file",
+							"src": "/C:/Users/LPS27/OneDrive/Desktop/image_sample/sample3.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4200/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sucess Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "CompanyUEN",
+									"value": "LoremRaj3",
+									"type": "text"
+								},
+								{
+									"key": "CompanyName",
+									"value": "Locus",
+									"type": "text"
+								},
+								{
+									"key": "FullName",
+									"value": "Raj Gohil",
+									"type": "text"
+								},
+								{
+									"key": "CompanyPosition",
+									"value": "Developer",
+									"type": "text"
+								},
+								{
+									"key": "Email",
+									"value": "raj.gohil@tatvasoft.com",
+									"type": "text"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "+659876543210",
+									"type": "text"
+								},
+								{
+									"key": "Documents",
+									"type": "file",
+									"src": "/C:/Users/LPS27/OneDrive/Desktop/image_sample/sample1.pdf"
+								},
+								{
+									"key": "Documents",
+									"type": "file",
+									"src": "/C:/Users/LPS27/OneDrive/Desktop/image_sample/sample2.pdf"
+								},
+								{
+									"key": "Documents",
+									"type": "file",
+									"src": "/C:/Users/LPS27/OneDrive/Desktop/image_sample/sample3.pdf"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4200/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4200",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "269"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10d-tJFRpAIQhhxhKlvPnVneJYQe8Ig\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 May 2023 12:53:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"CompanyUEN\": \"LoremRaj3\",\n    \"CompanyName\": \"Locus\",\n    \"CompanyPosition\": \"Developer\",\n    \"FullName\": \"Raj Gohil\",\n    \"Email\": \"raj.gohil@tatvasoft.com\",\n    \"PhoneNumber\": \"+659876543210\",\n    \"DocumentPathList\": [\n        \"uploads/20/sample1.pdf\",\n        \"uploads/20/sample2.pdf\",\n        \"uploads/20/sample3.pdf\"\n    ],\n    \"ID\": 20\n}"
+				}
+			]
+		}
+	]
+}
